@@ -1,16 +1,16 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import Button from '../components/Button'
+import ButtonStrap from '../components/ButtonStrap'
 import {increment, decrement, reset} from '../actions'
 import CurrentCount from '../components/CurrentCount'
 let CountTodo = ({dispatch}) => {
     return (
         <div>
-            <Button OnIncrement={() => dispatch(increment())} name="Increment"/>
+            <ButtonStrap OnIncrement={() => dispatch(increment())} name="Increment"/>
 
-            <Button OnIncrement={() => dispatch(decrement())} name="Decrement"/>
+            <ButtonStrap OnIncrement={() => dispatch(decrement())} name="Decrement"/>
 
-            <Button OnIncrement={() => dispatch(reset())} name="RESET"/>
+            <ButtonStrap OnIncrement={() => dispatch(reset())} name="RESET"/>
         </div>
     )
 }
