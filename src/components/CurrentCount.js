@@ -1,11 +1,11 @@
 import React, {PropTypes} from 'react';
-import Button from '../components/Button'
+import ButtonStrap from '../components/ButtonStrap'
 const CurrentCount = ({counters, p}) => (
     <div>
         CurrentCount: {counters != 5
             ? counters
             : 0}
-        <Button OnIncrement={() => p(20)} name="Plus"/>
+        <ButtonStrap OnIncrement={() => p(20)} name="Plus"/>
     </div>
 )
 
